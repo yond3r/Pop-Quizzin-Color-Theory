@@ -1,0 +1,41 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+
+header {
+    background-color: #FFF4F0;
+    padding: 50px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #EF98AAff;
+}
+
+
+
+
+h3 {
+    text-align: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #EF98AAff;
+}
+
+
+
+
+footer {
+    background-color: #FFF4F0;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+#bigHead {
+    text-decoration: none;
+}
