@@ -19,3 +19,4 @@ And of course, to the TAs who put up with my silly questions this assignment.
 Standard Licensings apply, however, feel free to pull the code -- please, just ask prior to. Thank you (-:
 
 <h1> Deployed Link </h1>
+https://yond3r.github.io/Pop-Quizzin-Color-Theory/ 
