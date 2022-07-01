@@ -12,9 +12,20 @@ header {
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
-    color: #EF98AAff;
+    color: #EF98AA;
+    margin-left: 275px;
+    padding: 10px;
 }
 
+main {
+    background-image: url(./bird-bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 700px;
+    margin-left: 235px;
+    margin-right: 0%;
+}
 
 
 
@@ -23,17 +34,47 @@ h3 {
     justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
-    color: #EF98AAff;
+    color: #EF98AA;
+}
+h5 {
+    text-align: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #FFF4F0;
+    padding: 35px;
+    margin-right: 250px;
+}
+
+h4 {
+    text-align: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: #EF98AA;
+    padding: 20px;
 }
 
 
-
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #EF98AA;
+}
 
 footer {
     background-color: #FFF4F0;
     text-align: center;
     justify-content: center;
     padding: 50px;
+}
+
+#square {
+    text-align: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+
 }
 
 #bigHead {

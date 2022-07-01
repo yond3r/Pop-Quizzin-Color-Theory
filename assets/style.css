@@ -1,0 +1,113 @@
+* {
+margin: 0%;
+padding: 0%;
+box-sizing:border-box;
+}
+
+header {
+    background-color: #FFF4F0;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #EF98AA;
+}
+
+h2 { 
+    color: #C0CEE2;
+    background-color: #005A80;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+
+main {
+    background-color: #005A80;
+    height: 40%;
+    width: 100%;
+}
+
+section {
+    background-color: #005A80;
+    height: 8%;
+    width: 100%;
+}
+
+footer {
+    background-color: #FFF4F0;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #EF98AA;
+}
+
+#rainbows {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: #ffff;
+}
+
+#startBtn {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    padding: 35px;
+    text-decoration: none;
+    position: relative;
+    justify-content: center;
+    border: 2px solid #ffd721;
+    color: #FFD207;
+    background-color: transparent;
+    display: flex;
+    width: 40%;
+    margin-left:30%;
+}
+
+#startBtn ::before{
+    background-color:#ffda38;
+    height: calc(100% + 5px);
+    content: "";
+    position: absolute;
+    top: -9px;
+    transition: 300ms ease-in;
+    width: 100%;
+    z-index: -1;
+}
+
+#scoreBtn {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    text-decoration: none;
+    position: absolute;
+    justify-content: center;
+    border: 2px solid #ffd721;
+    color: #FFD207;
+    background-color: transparent;
+    display: flex;
+    margin-left:45%;
+}
+
+#scoreBtn ::before {
+    background-color:#ffda38;
+    height: calc(100% + 5px);
+    content: "";
+    position: absolute;
+    top: -9px;
+    transition: 300ms ease-in;
+    width: 100%;
+    z-index: -1;
+}

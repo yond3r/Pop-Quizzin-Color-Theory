@@ -1,27 +1,9 @@
-// global var 
-// time left var
-// current question 
-// array of questions
-// each quetsion as an object
+// Open game in new game.html & start game
 
-[
-    {
-        question: "What are the four compontents of color?", 
-        choiceone: "tones, tints, nuetrals, grays",
-        choicetwo: "nuetralization, popability, dullability, chromatics",
-        choicethree: "hue, saturation, value, temperature",
-        choicefour: "complementaries, naturals, neutrals, warmth"
-     }
-]
+startBtn {
+    startBtn.addEventListener("click", );
+}
 
-
-
-
-
-// function that starts game, that function needs to start timer -- function startGame
-// increments the question -- current
-// calls render question
-
-// new function "render queston"
-//check current what question we're on
-//display question + 4 answers on the html -- grab html 
+//I struggle with this everytime, but how in the love of god do I move the cute boxes to the center??
+//why is my html "return to home" tab (the OG index.html) not returning to home??
+//why is my pseudo code ::before not doing anything, I have big dreams w/ these custom buttons

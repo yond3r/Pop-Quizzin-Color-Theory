@@ -1,0 +1,82 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+    
+header {
+    background-color: #FFF4F0;
+    padding: 50px;
+}
+
+h3 {
+    text-align: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #EF98AA;
+}
+
+main {
+    background-image: url(./color-theory\ bg.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 700px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+footer {
+    background-color: #FFF4F0;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+#mainSpace {
+    text-align: center;
+    display: inline-block;
+    align-items: flex-start;
+    width: 75%;
+}
+
+#Questions, #answers {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    justify-content: center;
+}
+
+#btnOne, #btnTwo, #btnThree, #btnFour {
+    color: #E5ACDA;
+    background-color: #c4deaf;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 14px; 
+    text-align: center;
+    text-decoration: none;
+    height: 35px;
+    margin: 0%;
+    padding: 50px;
+    position: relative;
+    width: 55%;
+}
+
+#timeRemaining {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size:larger;
+    color: #c4deaf;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+}
+
+#bigHead {
+    text-decoration: none;
+}
+
+#pFoot {
+    color: #EF98AA;
+}
