@@ -18,7 +18,7 @@ h3 {
 }
 
 main {
-    background-image: url(./color-theory\ bg.jpg);
+    background-image: url(./colorTheoryBG.jpg);
     background-size: contain;
     width: 100%;
     height: 700px;
@@ -47,7 +47,7 @@ footer {
     justify-content: center;
 }
 
-#btnOne, #btnTwo, #btnThree, #btnFour {
+button#btnOne, button#btnTwo, button#btnThree, button#btnFour {
     color: #E5ACDA;
     background-color: #c4deaf;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -56,21 +56,22 @@ footer {
     text-align: center;
     text-decoration: none;
     height: 35px;
-    margin: 0%;
+    margin: 25px;
     padding: 50px;
     position: relative;
     width: 55%;
 }
 
-#timeRemaining {
+h4#timeRemaining {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 200;
-    font-size:larger;
+    font-weight: 400;
+    font-size: 25px;
     color: #c4deaf;
+    background-color: transparent;
     justify-content: center;
     text-align: center;
     position: relative;
-    padding-top: 100px;
+    padding-top: 25px;
 }
 
 #bigHead {
@@ -79,4 +80,5 @@ footer {
 
 #pFoot {
     color: #EF98AA;
+    height:100%;
 }
