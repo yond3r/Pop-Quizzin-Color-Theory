@@ -17,9 +17,10 @@ var wins = localStorage.getItem("savedWins") || 0;
 var losses = localStorage.getItem("savedLosses") || 0;
 // lossSpan.textContent= losses;
 
+var seconds;
 //starting with the timer, because I'd like to get that working first, per instructions
 function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
+    var timer = duration, minutes;
     setInterval(() => {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
@@ -39,27 +40,35 @@ function startTimer(duration, display) {
     }, 1000)
 }
 
+function finishQuiz (){
+// to be completed
+}
+
 //starts questions w/ timer
 // startBtn.addEventListener("click", startGame);
-    // startBtn.addEventListener("click", function () {
-function beginTimer(){
-        console.log("I am starting the timer.")
-        var fiveMinutes = 60 * 5,
-            display = document.querySelector("#time");
-        startTimer(fiveMinutes, display);
-    }
+// startBtn.addEventListener("click", function () {
+function beginTimer() {
+    console.log("I am starting the timer.")
+    var fiveMinutes = 60 * 5,
+        display = document.querySelector("#time");
+    startTimer(fiveMinutes, display);
+}
 
 
-    function loadQuestion(questionIndex) {
-        document.getElementById("question").disabled = true;
-        var Q = questions[questionIndex];
-        console.log("Q = ", Q);
-        question.textContent = (questionIndex + 1) + '.' + Q.question;
-        choiceOne.textContent = Q.choices.choiceOne;
-        choiceTwo.textContent = Q.choices.choiceTwo;
-        choiceThree.textContent = Q.choices.choiceThree;
-        choiceFour.textContent = Q.choices.choiceFour;
-    };
+function loadQuestion(questionIndex) {
+    document.getElementById("question").disabled = true;
+    var Q = questions[questionIndex];
+    console.log("Q = ", Q);
+    question.textContent = (questionIndex + 1) + '.' + Q.question;
+    choiceOne.textContent = Q.choices.choiceOne;
+    choiceOne.setAttribute("value", Q.choices.choiceOne)
+    choiceTwo.textContent = Q.choices.choiceTwo;
+    choiceTwo.setAttribute("value", Q.choices.choiceTwo)
+    choiceThree.textContent = Q.choices.choiceThree;
+    choiceThree.setAttribute("value", Q.choices.choiceThree)
+    choiceFour.textContent = Q.choices.choiceFour;
+    choiceFour.setAttribute("value", Q.choices.choiceFour)
+};
 
 //starts the game
 function startGame() {
@@ -100,6 +109,38 @@ function loadNextQuestion() {
 
 beginTimer();
 startGame();
+
+function processUserAnswer(event) {
+    console.log("clicked an answer")
+    var btnEl = event.target;
+
+    if (btnEl.value !== questions[questionIndex].answer) {
+        seconds -= 20;
+
+        if (seconds < 0) {
+            seconds = 0;
+        }
+        var display = document.querySelector("#time");
+        display.textContent = seconds 
+
+        } else {
+        // to be added
+    }
+        questionIndex++;
+        if (seconds <= 0 || questionIndex === questions.length){
+            finishQuiz();
+        } else {
+            loadQuestion();
+        }
+}
+
+
+choiceOne.addEventListener("click", processUserAnswer)
+choiceTwo.addEventListener("click", processUserAnswer)
+choiceThree.addEventListener("click", processUserAnswer)
+choiceFour.addEventListener("click", processUserAnswer)
+
+
 
 //attempting local storage, lol
 localStorage.setItem("saveLosses", losses);

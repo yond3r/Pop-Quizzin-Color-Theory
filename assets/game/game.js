@@ -7,7 +7,7 @@ var questions = [
             choiceThree: "hue, saturation, value, temperature",
             choiceFour: "complementaries, naturals, neutrals, warmth",
         },
-        answer: "choiceThree",
+        answer: "hue, saturation, value, temperature",
     },
     {
         choices: {
@@ -17,7 +17,7 @@ var questions = [
         choiceThree: "neither, tertiary colors come from nature",
         choiceFour:"by adding a primary and secondary color together",
         },
-        answer: "choiceFour",
+        answer: "by adding a primary and secondary color together",
     },
     {
         question: "what is not a way to achieve color harmony?",
@@ -27,7 +27,7 @@ var questions = [
         choiceThree: "by basing the colors off of nature",
         choiceFour: "by basing the colors off of light",
         },
-        answer: "choiceFour",
+        answer: "by basing the colors off of light", 
     },
     {
         question: "how can 3 colors be percieved as four?",
@@ -37,7 +37,7 @@ var questions = [
         choiceThree: "by looking on a color-blind computer",
         choiceFour: "by looking only at the physical concept of each, starting with its primary component",
         },
-        answer: "choiceTwo",
+        answer: "by placing the same colors next to each other, and focusing on the different characteristics of each",
     },
     {
         question: "what artist said: 'Color! What a deep and mysterious language, the language of dreams.",
@@ -47,7 +47,7 @@ var questions = [
         choiceThree: "Jean-Michel Basquiat",
         choiceFour: "El Greco",
         },
-        answer: "choiceOne",
+        answer: "Paul Gauguin",
     },
 ]
 
