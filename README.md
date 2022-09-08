@@ -1,8 +1,9 @@
 # Pop-Quizzin-Color-Theory
 <h1>Screenshots</h1>
 
-![alt text](./assets/game/endpage/screenshots/homepage.png)
-![alt text](./assets/game/endpage/screenshots/endpage.png)
+![alt text](./assets/images/screenshots/endpage.png)
+![alt text](./assets/images/colorTheoryBG.jpg)
+![alt text](./assets/images/screenshots/quizquestions.png)
 
 
 <h1>Description</h1>
