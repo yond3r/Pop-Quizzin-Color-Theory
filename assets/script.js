@@ -7,6 +7,10 @@ var choiceTwo = document.getElementById("btnTwo");
 var choiceThree = document.getElementById("btnThree");
 var choiceFour = document.getElementById("btnFour");
 
+var startBtn = document.getElementById("startBtn");
+
+var questionIndex = 0;
+
 var wins = localStorage.getItem("savedWins") || 0;
 // winSpan.textContent=wins;
 
@@ -36,24 +40,41 @@ function startTimer(duration, display) {
 }
 
 //starts questions w/ timer
-startBtn.addEventListener("click", startGame);
-    startBtn.addEventListener("click", function () {
+// startBtn.addEventListener("click", startGame);
+    // startBtn.addEventListener("click", function () {
+function beginTimer(){
+        console.log("I am starting the timer.")
         var fiveMinutes = 60 * 5,
             display = document.querySelector("#time");
         startTimer(fiveMinutes, display);
-})
+    }
 
-//starts the game
-function startGame() {
+
     function loadQuestion(questionIndex) {
         document.getElementById("question").disabled = true;
-        var Q = question[questionIndex];
-        question.textContent(questionIndex + 1) + '.' + Q.question;
+        var Q = questions[questionIndex];
+        console.log("Q = ", Q);
+        question.textContent = (questionIndex + 1) + '.' + Q.question;
         choiceOne.textContent = Q.btnOne;
         choiceTwo.textContent = Q.btnTwo;
         choiceThree.textContent = Q.btnThree;
         choiceFour.textContent = Q.btnFour;
-    }
+    };
+
+//starts the game
+function startGame() {
+    console.log("I am starting the game.")
+    console.log("question index = ", questionIndex);
+    // function loadQuestion(questionIndex) {
+    //     document.getElementById("question").disabled = true;
+    //     var Q = question[questionIndex];
+    //     question.textContent(questionIndex + 1) + '.' + Q.question;
+    //     choiceOne.textContent = Q.btnOne;
+    //     choiceTwo.textContent = Q.btnTwo;
+    //     choiceThree.textContent = Q.btnThree;
+    //     choiceFour.textContent = Q.btnFour;
+    // }
+    loadQuestion(questionIndex);
 };
 
 function loadNextQuestion() {
@@ -73,10 +94,12 @@ function loadNextQuestion() {
 }
 
 //moving on from one question to the next
-setTimeout(() => {
-    loadQuestion();
-}, 1000);
+// setTimeout(() => {
+//     loadQuestion();
+// }, 1000);
 
+beginTimer();
+startGame();
 
 //attempting local storage, lol
 localStorage.setItem("saveLosses", losses);

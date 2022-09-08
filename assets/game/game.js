@@ -1,4 +1,4 @@
-var question = [
+var questions = [
     {
         question: "What are the four compontents of color?", 
         choices: {
