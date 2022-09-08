@@ -55,10 +55,10 @@ function beginTimer(){
         var Q = questions[questionIndex];
         console.log("Q = ", Q);
         question.textContent = (questionIndex + 1) + '.' + Q.question;
-        choiceOne.textContent = Q.btnOne;
-        choiceTwo.textContent = Q.btnTwo;
-        choiceThree.textContent = Q.btnThree;
-        choiceFour.textContent = Q.btnFour;
+        choiceOne.textContent = Q.choices.choiceOne;
+        choiceTwo.textContent = Q.choices.choiceTwo;
+        choiceThree.textContent = Q.choices.choiceThree;
+        choiceFour.textContent = Q.choices.choiceFour;
     };
 
 //starts the game
